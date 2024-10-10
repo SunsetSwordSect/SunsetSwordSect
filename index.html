@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/class.css">
+        <link rel="stylesheet" href="css/element.css">
+        <link rel="stylesheet" href="css/id.css">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/font.css">
+    </head>
+
+    <body>
+        
+
+        <!-- NAVBAR -->
+        <div class="nav-background opacity_fadein" style="opacity: 0;"></div>
+        <div class="nav opacity_fadein" style="opacity: 0;">
+            <nav class="nav-items">    
+                <div class="nav-button"><a href="">Home</a></div>
+                <div class="nav-button"><a href="#about_section">About</a></div>
+                <div class="nav-button"><a href="#second_section">Gallery</a></div>
+                <div class="nav-button"><a href="#social_section">Socials</a></div>
+            </nav>
+        </div>
+        <!-- NAVBAR -->
+
+        <div id="image-viewer">
+            <img id="image-holder">
+            
+            <div id="image-viewer-close"><p>Close</p></div>
+        </div>
+        <div id="image-viewer-background"></div>
+
+        <!-- PAGES -->
+        <section id="first_section" class="screen-section" style="display: flex; flex-direction: column;">
+            <div style="width: 100%; flex-basis: 50%;"></div>
+            <div style="display: flex; justify-content: center;"><p class=" main_text_fadein" id="company-title" style="opacity: 0;"> Sunset Sword Sect</p></div>
+            
+            <div style="background-color: #d7b484; display: flex; flex-direction: column; position: absolute; width: 100%; height: 100%;">    
+                <img class="screen-section" draggable="false" style="position: absolute; z-index: 0; filter: brightness(40%);user-select: none; width: 100%; height: 100vh; object-fit: cover;" src="images/section_1_background.jpg"/>
+                <img id="cloud_lower_left" class="move-clouds-left" style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; top:0;left: 0;" src="images/background_cloud_lower_left.png" />
+                <img id="cloud_lower_right" class="move-clouds-right" style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; top:0;left: 0;" src="images/background_cloud_lower_right.png" />
+                <img id="cloud_upper_left" class="move-clouds-left" style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; top:0;left: 0;" src="images/background_cloud_upper_left.png" />
+                <img id="cloud_upper_right" class="move-clouds-right" style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; top:0;left: 0;" src="images/background_cloud_upper_right.png" />
+                <p id="company-name" class="fadeout" > Sunset Sword Sect</p>
+                <!--        
+                <img style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; top:0;left: 0;" src="images/background_cloud_right.png"/>            
+                <img style="position: absolute; width: 100vw; height: 100vh; object-fit: cover; top:0;left: 0;" src="images/background_cloud_left.png"/> -->
+            </div>
+        </section>
+
+        <section id="about_section" class="screen-section" style="display: flex; flex-direction: column; color:white;">
+            <img class="screen-section" draggable="false" style="position: absolute; z-index: -1; filter: brightness(20%);user-select: none; width: 100%; height: 100vh; object-fit: cover;" src="images/background_split/about_section_background.jpg"/>
+            <nav style="flex-basis: 55px; width: 100%; "></nav>
+            <div id="about-text-area" class="text-area" style="display: flex; flex-direction: column; height: 100%; width: 100%; justify-content: center;">
+                
+                <div style="display:flex; justify-content: flex-start; align-items: center; width: 100%;"><p class="about-text-heading">About Us</p></div>
+                <div style="width: 100%; z-index: 9; display: flex; justify-content: center; align-items: center;">
+                    <p class="about-text-body" style="margin: 20px 0px;">Sunset Sword Sect is a multidisciplinary studio, dedicated to providing quality service and making your dream projects a reality.</p>
+                </div>
+                <div style="width: 100%; flex-basis: 20%;"></div>
+                <div style="width: 100%; display: flex; justify-content: center;"><p class="about-text-heading">What We Do</p></div>
+                <div id="work-list">
+                    <p>Game Development</p>                    
+                    <p>Game Programing</p>
+                    <p>Level Design</p>
+                    <p>UI/UX</p>
+                    <p>Web Development</p>
+                    <p>Engine Development</p>
+                </div>
+            </div>
+            <nav style="flex-basis: 55px; width: 100%; "></nav>
+        </section>
+
+        <!-- <section id="previous_work" class="screen-section" style="background-color: black; display: flex; flex-direction: column; color: white;">
+            <nav style="flex-basis: 55px; width: 100%; "></nav>
+            <div style="width: 100%; display: flex; justify-content: center;"><p class="about-text-heading">Previous Work</p></div>
+            
+        </section> -->
+
+
+        
+
+        <section id="second_section" class="screen-section" style="height: fit-content; background-color: black; display: flex; flex-direction: column; color: white;">
+            <div style="display:flex; width: 100%; justify-content: center;"><p class="generic-title">Concept Art</p></div>
+            <div class="gallery-area">
+                <img src="images/gallery/dark_meadow.jpg" style="object-position: 0% 20%;">
+                <img src="images/gallery/japanese_city.jpg">
+                <img src="images/gallery/town.jpg">
+                <img src="images/gallery/wuxia.jpg">
+                <img src="images/gallery/wuxia_temple.jpg" style="object-position: center;">
+                <img src="images/gallery/robot.jpg" style="object-position: top;">
+                <img src="images/gallery/titan_1.jpg" style="object-position: top;">
+                <img src="images/gallery/paladin.jpg" style="object-position: top;">
+                <img src="images/gallery/titan_2.jpg" style="object-position: center;">
+            </div>    
+        </section>
+
+
+        <section id="social_section" style="width: 100%; height: fit-content; min-width: 500px;">
+            <div style="width: 100%;  background-color: black; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+                <div id="social_section_heading" style="color:white; flex-basis: 40px; width: 100%; display: flex; justify-content: center; align-items: center;"> <p class="generic-title">Socials</p></div>
+                
+                <div id="social_icons" style=" display: flex; width: 90%; flex-basis:fit-content; justify-content: space-evenly; align-items: center;background-color: darkgrey; flex-wrap: wrap;">
+                    <a href="https://www.youtube.com/channel/UCOSMW1jRjZje9RhxoBeCQmg" target="_blank"><img src="images/social_icons/youtube.png" alt="youtube_icon"></a>
+                    <a href="https://www.instagram.com/sswordsmen/" target="_blank"><img src="images/social_icons/instagram.png" alt="instagram_icon"></a>
+                    <a href="https://twitter.com/sswordsmen" target="_blank"><img src="images/social_icons/X.png" alt="twitter_icon"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100085530686760" target="_blank"><img src="images/social_icons/facebook.png" alt="facebook_icon"></a>
+                    <a href="https://www.twitch.tv/sunset_swordsman " target="_blank"><img src="images/social_icons/twitch.png" alt="twitch_icon"></a>
+                    <a href="https://www.tiktok.com/@sunset_swordsmen" target="_blank"><img src="images/social_icons/tik-tok.png" alt="tiktok_icon"></a>
+                </div>
+                <div style="min-height: 50px; width: 100%;"></div>
+            </div>
+        </section>
+
+
+
+
+    </body>
+
+    <script src="js/functions.js"></script>
+    <script>
+        const dot_name = "cursor-dot";
+        const outline_name = "cursor-outline";
+        const clouds = ["cloud_lower_left","cloud_lower_right","cloud_upper_left","cloud_upper_right"];
+        const pages = ["first_section","first_section"]
+        const gallery_items = document.querySelectorAll(".gallery-area img");
+        
+        /*PROCESS*/
+        setMultipleAnimationEnd(clouds);
+        setGalleryOnClick();
+
+        
+   
+        
+        /*EVENTS*/
+        window.addEventListener("keydown",function(e){
+            if(e.key == 't'){
+                // Test event
+                let p = document.getElementById("first_section");
+                if(p.style.display == "flex")
+                    p.style.display = "none";
+                else
+                    p.style.display = "flex";    
+            }
+       });
+        /*EVENTS*/
+
+    </script>
+</html>

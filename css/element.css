@@ -1,0 +1,19 @@
+
+
+body{
+                    
+    margin:0;
+    width: 100%;
+    height: 100%;
+    
+    /* cursor:none;  */
+    overflow-y: hidden;
+    overflow-x: hidden; 
+
+    font-family: 'monsterrat';
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
