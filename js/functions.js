@@ -406,5 +406,52 @@
             image_viewer_background.style.display = "none";
         }
 
-
         
+        function setContactListener(){
+            let contact = document.querySelectorAll(".contact-item");
+            for(let i=0;i<contact.length;i++){
+                contact[i].addEventListener("mouseenter",function(e){
+                    e.target.children[1].style.width = "100%";
+                });
+                contact[i].addEventListener("mouseleave",function(e){
+                    e.target.children[1].style.width = "0";
+                });
+            }
+        }
+
+        function setContactTextListener(){
+            let item = document.querySelectorAll(".contact-item p");
+            for(let i=0; i<item.length;i++){
+                item[i].addEventListener("click",function(e){
+                    navigator.clipboard.writeText(e.target.innerText);
+                    presentNotification();
+                    setTimeout(function(){
+                        removeNotification();
+                    },800);
+                })
+            }
+        }
+
+        function presentNotification(){
+            let note = document.getElementById("notifications");
+            let noteBack = document.getElementById("notification-background");
+            note.style.display = "flex";
+            noteBack.style.display = "flex";
+            setTimeout(function(){
+                note.style.opacity = "1";
+                noteBack.style.opacity = "0.5";
+            },1);
+        }
+
+        function removeNotification(){
+            let note = document.getElementById("notifications");
+            let noteBack = document.getElementById("notification-background");
+            note.style.opacity = "0";
+            noteBack.style.opacity = "0";
+            setTimeout(function(){
+                note.style.display = "flex";
+                noteBack.style.display = "flex";    
+            },400);
+        }
+
+

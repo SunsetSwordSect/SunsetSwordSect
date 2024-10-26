@@ -1,4 +1,47 @@
 @font-face {
+    font-family: "altena";
+    src: url("../fonts/AltenaRegular-drngK.ttf");
+}
+
+@font-face {
+    font-family: "cracker";
+    src: url("../fonts/Cracker-6RxDo.ttf");
+}
+
+
+@font-face{
+    font-family: "hakturus";
+    src: url("../fonts/HakturusRegular-OVXro.ttf")
+}
+
+
+@font-face {
+    font-family: "hardshock";
+    src: url("../fonts/Hardshock-BLj6w.otf");
+}
+
+
+@font-face {
+    font-family: "jiayou";
+    src: url("../fonts/JiayouAkira-MAVEY.otf");
+}
+
+@font-face {
+    font-family: "jiwaku";
+    src: url("../fonts/JiwakuMenanti-qZGO2.otf");
+}
+
+@font-face {
+    font-family: "oasen";
+    src: url("../fonts/Oasen-0va9P.otf");
+}
+
+@font-face {
+    font-family: "obeyon";
+    src: url("../fonts/Obeyon-WpqjG.otf");
+}
+
+@font-face {
     font-family: "xangda";
     src: url("../fonts/XangdaShiny-l4AX.ttf");
 }
@@ -6,4 +49,14 @@
 @font-face {
     font-family: "monsterrat";
     src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: "kelvinch-roman";
+    src: url("../fonts/Kelvinch-Roman.otf");
+}
+
+@font-face{
+    font-family: "kelvinch-italic";
+    src: url("../fonts/Kelvinch-Italic.otf");
 }

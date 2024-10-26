@@ -17,7 +17,7 @@
                 <div class="nav-button"><a href="">Home</a></div>
                 <div class="nav-button"><a href="#about_section">About</a></div>
                 <div class="nav-button"><a href="#second_section">Gallery</a></div>
-                <div class="nav-button"><a href="#social_section">Socials</a></div>
+                <div class="nav-button"><a href="#contact_section">Contact</a></div>
             </nav>
         </div>
         <!-- NAVBAR -->
@@ -80,7 +80,7 @@
         
 
         <section id="second_section" class="screen-section" style="height: fit-content; background-color: black; display: flex; flex-direction: column; color: white;">
-            <div style="display:flex; width: 100%; justify-content: center;"><p class="generic-title">Concept Art</p></div>
+            <div style="display:flex; width: 100%; justify-content: center;"><p class="generic-title"></p></div>
             <div class="gallery-area">
                 <img src="images/gallery/dark_meadow.jpg" style="object-position: 0% 20%;">
                 <img src="images/gallery/japanese_city.jpg">
@@ -94,8 +94,7 @@
             </div>    
         </section>
 
-
-        <section id="social_section" style="width: 100%; height: fit-content; min-width: 500px;">
+        <!-- <section id="social_section" style="width: 100%; height: fit-content; min-width: 500px;">
             <div style="width: 100%;  background-color: black; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
                 <div id="social_section_heading" style="color:white; flex-basis: 40px; width: 100%; display: flex; justify-content: center; align-items: center;"> <p class="generic-title">Socials</p></div>
                 
@@ -109,11 +108,22 @@
                 </div>
                 <div style="min-height: 50px; width: 100%;"></div>
             </div>
+        </section> -->
+        <!-- Probably align them in a line and have them light up like on w3 schools. Ref = "https://www.w3schools.com/js/default.asp" -->
+
+        <section id="contact_section" style="width: 100%; height: fit-content; min-height: 200px; background-color: black; display:flex; flex-direction: column; padding: 20px 0px;">
+            <div style="display:flex; width: 100%; justify-content: center;"><p class="generic-title">Contact Us</p></div>
+            <div id="contact-area" style="width:100%;flex-basis:100%; display: flex; align-items: center; justify-content: center; gap:30px;">
+                <div class="contact-item"><img src="images/social_icons/discord.png"/> <p>LilSack@4200</p></div>
+                <div class="contact-item"><img src="images/social_icons/email.png"/> <p>sunsetswordsect@gmail.com</p></div>
+            </div>
         </section>
 
 
-
-
+        <div id="notification-background"></div>
+        <div id="notifications">
+            <p>Copied</p>
+        </div>
     </body>
 
     <script src="js/functions.js"></script>
@@ -127,9 +137,8 @@
         /*PROCESS*/
         setMultipleAnimationEnd(clouds);
         setGalleryOnClick();
-
-        
-   
+        setContactListener();
+        setContactTextListener();
         
         /*EVENTS*/
         window.addEventListener("keydown",function(e){

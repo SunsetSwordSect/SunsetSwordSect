@@ -1,4 +1,4 @@
-.about-text-heading{font-weight: bolder; font-size: calc(55px + 4vw); margin: 0;}
+.about-text-heading{font-weight: bolder; font-size: calc(55px + 4vw); margin: 0;font-family: "kelvinch-italic";}
 .about-text-body{font-size: calc(20px + 0.3vw);}
 
 .card{
@@ -12,6 +12,42 @@
 
 .card img{
     width: 100%;
+}
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-item:hover{
+    cursor: pointer;
+}
+
+.contact-item p {
+    margin: 0;
+    width: 0;
+    font-size: 40px;
+    overflow: hidden;   
+    transition: width 0.3s ease-out;
+    
+}
+
+.contact-item p:hover{
+    color: #FFD700;
+}
+
+.contact-item img{
+    width: 100px;
+}
+
+.contact-item-info{
+    width: 0px;
+}
+
+.contact-item-info p{
+    margin: 0;
+    font-size: 40px;
 }
 
 .gallery-area{
